@@ -1,19 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
 body{
     display: flex;
     justify-content: center;
     background: #EECDA3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    font-size: 1.8em;
+}
+
+h2{
+    font-size: 1.2em;
 }
 
 .container{
-    margin: 100px 0 0 ;
-    width: 456px;
-    height: 428px;
-    text-align: center;
+    margin: 90px auto;
+    max-width: 456px;
+    height: 360px;
     background-color: white;
     border-radius: 15px;
+}
+
+.container img{
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
 }
 
 .boton{
@@ -21,14 +38,9 @@ body{
     justify-content: space-around;
 }
 
-.container img{
-    margin-top: 15%;
-    border-radius: 15px;
-    background-color: rgb(240, 240, 240);
-}
 
 .btn{
-    margin: 5% 0;
+    margin: 10px 0;
     border-radius: 15px;
     border: 1px solid #151A41;
     background: #FF5F6D;  /* fallback for old browsers */
@@ -41,12 +53,4 @@ body{
 .btn a{
     text-decoration: none;
     color: black;
-}
-
-/* mediaqueries */
-@media (max-width:540px){
-    .container{
-        width: 436px;
-        height: 408px;
-    }
 }
